@@ -14,7 +14,7 @@ const ToDo = ({heading = 'To-Do Component'}) => {
 
                 setToDos(response.data);
              });
-    }, []);
+    }, [toDos]);
 
     return(
         <section>
