@@ -1,9 +1,9 @@
 import ToDoItem from './ToDoItem';
 
-const ToDoList = ({toDos}) => {
+const ToDoList = ({toDos, setToDos}) => {
     return (
         <ul>
-            {toDos.map((toDo) => <ToDoItem key={toDo.id} toDo={toDo} />)}
+            {toDos.map((toDo) => <ToDoItem key={toDo.id} toDo={toDo} setToDos={setToDos} />)}
         </ul>
     );
 };

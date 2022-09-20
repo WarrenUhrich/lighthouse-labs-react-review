@@ -30,6 +30,11 @@ app.post('/todos', (req, res) => {
     res.json(newTask);
 });
 
+app.patch('/todos/:id/complete', (req, res) => {
+    const taskToUpdate = data.find(toDo => toDo.id === req.params.id);
+    if (taskToUpdate) taskToUpdate.completed = true;
+});
+
 app.listen(PORT, () => {
     console.log('Listening on port:', PORT);
 });

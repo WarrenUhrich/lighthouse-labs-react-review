@@ -20,7 +20,7 @@ const ToDo = ({heading = 'To-Do Component'}) => {
         <section>
             <h2>{heading}</h2>
             <ToDoForm setToDos={setToDos} />
-            <ToDoList toDos={toDos} />
+            <ToDoList setToDos={setToDos} toDos={toDos} />
         </section>
     );
 };
