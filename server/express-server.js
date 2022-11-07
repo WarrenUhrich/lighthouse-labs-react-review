@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan'); // outputs request data / status
+const cors = require('cors');
 
 //////////////////////////////////////////////////////////////////
 // Configuration / Set-Up
@@ -14,6 +15,7 @@ const PORT = 7777;
 
 app.use(express.urlencoded({extended: true})); // for form submission
 app.use(morgan('dev'));
+app.use(cors()); // WARNING: In real world, read the docs: https://www.npmjs.com/package/cors
 
 //////////////////////////////////////////////////////////////////
 // Listener

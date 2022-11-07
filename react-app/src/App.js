@@ -1,8 +1,11 @@
 import './App.css';
+import ToDoList from './components/to-dos/ToDoList';
 
 function App() {
   return (
-    <>Hello, World!</>
+    <main>
+      <ToDoList heading="To-Do List" />
+    </main>
   );
 }
 
