@@ -14,6 +14,7 @@ const PORT = 7777;
 //////////////////////////////////////////////////////////////////
 
 app.use(express.urlencoded({extended: true})); // for form submission
+app.use(express.json()); // Important for AJAX JSON sending as body to server!
 app.use(morgan('dev'));
 app.use(cors()); // WARNING: In real world, read the docs: https://www.npmjs.com/package/cors
 

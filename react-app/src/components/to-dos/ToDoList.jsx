@@ -4,7 +4,6 @@ import ToDoListItem from './ToDoListItem';
 
 const ToDoList = (props) => {
     const [status, setStatus] = useState('loading');
-    const [toDos, setToDos] = useState({});
 
     useEffect(() => {
         axios.get('http://localhost:7777/to-dos')
@@ -14,7 +13,7 @@ const ToDoList = (props) => {
              })
              .then((data) => {
                 console.log('axios data:', data);
-                setToDos(data); // Save to-dos in state.
+                props.setToDos(data); // Save to-dos in state.
                 setStatus('complete'); // Set status to complete.
              })
              .catch((error) => {
@@ -22,8 +21,8 @@ const ToDoList = (props) => {
              });
     }, []);
 
-    const toDosJSX = Object.values(toDos).map((toDo) =>
-        <ToDoListItem key={toDo.id} toDo={toDo} setToDos={setToDos} />
+    const toDosJSX = Object.values(props.toDos).map((toDo) =>
+        <ToDoListItem key={toDo.id} toDo={toDo} setToDos={props.setToDos} />
     );
     console.log(toDosJSX);
 
