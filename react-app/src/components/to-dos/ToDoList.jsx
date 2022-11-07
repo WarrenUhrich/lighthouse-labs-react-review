@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
+import ToDoListItem from './ToDoListItem';
 
 const ToDoList = (props) => {
     const [status, setStatus] = useState('loading');
@@ -22,10 +23,7 @@ const ToDoList = (props) => {
     }, []);
 
     const toDosJSX = Object.values(toDos).map((toDo) =>
-        <li key={toDo.id}>
-            <h3>{toDo.title}</h3>
-            <p>{toDo.task}</p>
-        </li>
+        <ToDoListItem key={toDo.id} toDo={toDo} setToDos={setToDos} />
     );
     console.log(toDosJSX);
 
