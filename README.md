@@ -1,6 +1,6 @@
 # Lighthouse Labs | React Review
 
-[GitHub Repository Branch](https://github.com/WarrenUhrich/lighthouse-labs-react-review/tree/2023.02.07-web-flex-day-19sept2022) | [Vimeo Video Recording (Coming Soon)](#coming-soon)
+[GitHub Repository Branch](https://github.com/WarrenUhrich/lighthouse-labs-react-review/tree/2023.02.07-web-flex-day-19sept2022) | [Vimeo Video Recording](https://vimeo.com/796782251/1a1c7ef9d1)
 
 * [X] Review React!
 
