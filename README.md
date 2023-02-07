@@ -4,6 +4,24 @@
 
 * [X] Review React!
 
+## Running this Example
+
+Open a terminal window:
+
+```BASH
+cd ./server              # Enter the back-end folder
+npm install              # Install dependencies
+node ./express_server.js # Start the Express server
+```
+
+Open a **second** terminal window:
+
+```BASH
+cd ./react-app # Enter the front-end folder
+npm install    # Install dependencies
+npm start      # Start the React development server
+```
+
 ## To-Do List
 
 * Stay away from things like authentication, datbase
