@@ -24,8 +24,6 @@ npm start      # Start the React development server
 
 ## To-Do List
 
-* Stay away from things like authentication, datbase
-
 Back-end; what we'll need in terms of routes:
 
 * `GET /todos` ---> list of to-dos
