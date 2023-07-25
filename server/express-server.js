@@ -19,7 +19,8 @@ const PORT = 8080;
 
 app.use(cors());
 app.use(morgan('dev'));
-app.use(express.urlencoded({extended: true}));
+// app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 
 ////////////////////////////////////////////////////////////////////
 // Listener

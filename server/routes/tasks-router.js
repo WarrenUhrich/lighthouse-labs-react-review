@@ -25,6 +25,8 @@ router.get('/', (req, res) => {
  * POST /api/tasks/
  */
 router.post('/', (req, res) => {
+    console.log(req.body);
+
     const newTaskID = uuid.v4();
     
     const newDate = new Date();
