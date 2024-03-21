@@ -21,7 +21,7 @@ node ./express-server.js  # Run the server ( http://localhost:8080/ )
 And one for front-end:
 
 ```sh
-# Terminal 2 -> Back-end
+# Terminal 2 -> Front-end
 cd ./front-end            # Enter the front-end directory
 npm install               # Install necessary dependencies
 npm start                 # Run the React application ( http://localhost:3000/ )
