@@ -1,9 +1,11 @@
 # Lighthouse Labs | Concluding React
 
+[GitHub Repository Branch](https://github.com/WarrenUhrich/lighthouse-labs-react-review/tree/2024.03.21-web-flex-day-16october2023) | [Vimeo Video Recording](https://vimeo.com/926011290/8546e67eeb?share=copy)
+
 * [X] Review React Concepts
 * [X] Build a Simple App
 
-Feel free to finish the application as practice! "Edit" and "Delete" were not added to the project yet.
+Feel free to finish the application as practice! "`Edit`" and "`Delete`" were not added to the project yet.
 
 ## Running the Project
 
